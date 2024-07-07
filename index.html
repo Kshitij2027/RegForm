@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Register</h2>
+        <form action="#">
+            <div class="form-group">
+                <label for="first-name">Name</label>
+                <input type="text" id="first-name" name="first-name" required>
+            </div>
+            <div class="form-group">
+                <label for="father-name">Father's Name</label>
+                <input type="text" id="father-name" name="father-name" required>
+            </div>
+            <div class="form-group">
+                <label for="mother-name">Mother's Name</label>
+                <input type="text" id="mother-name" name="mother-name" required>
+            </div>
+            <div class="form-group">
+                <label for="phone-number">Phone No.</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender</label>
+                <input type="radio" name="male" id="male">Male
+                <input type="radio" name="female" id="female">Female
+                <input type="radio" name="other" id="other">Others
+            </div>
+            <div class="form-group">
+                <label for="date">Date of Birth</label>
+                <input type="date" name="DOB" id="DOB">
+            </div>
+            <div class="form-group">
+                <label for="address">Address</label>
+                <input type="text" placeholder="your current address">
+            </div>
+            <div class="form-group">
+                <label for="blood-group">Blood Group</label>
+                <select name="blood-group" id="blood-group">
+                    <option value="O+">O+</option>
+                    <option value="A+">A+</option>
+                    <option value="B+">B+</option>
+                    <option value="AB+">AB+</option>
+                    <option value="O-">O-</option>
+                    <option value="A-">A-</option>
+                    <option value="B-">B-</option>
+                    <option value="AB-">AB-</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="department">Department</label>
+                <input type="radio" name="cse" id="cse">CSE
+                <input type="radio" name="ece" id="ece">ECE
+                <input type="radio" name="it" id="it">IT
+            </div>
+            <div class="form-group">
+                <label for="skills">Skills(Any 4)</label>
+                <input type="checkbox" name="python" id="python">Python
+                <input type="checkbox" name="java" id="java">Java
+                <input type="checkbox" name="c" id="c">C++
+                <input type="checkbox" name="php" id="php">PHP
+                <input type="checkbox" name="dev" id="dev">Web Dev
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Register</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
