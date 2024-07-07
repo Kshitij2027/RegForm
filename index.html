@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
 </head>
 <body>
     <div class="container">
@@ -32,9 +33,9 @@
             </div>
             <div class="form-group">
                 <label for="gender">Gender</label>
-                <input type="radio" name="male" id="male">Male
-                <input type="radio" name="female" id="female">Female
-                <input type="radio" name="other" id="other">Others
+                <input type="radio" name="gender" value="male" id="male">Male
+                <input type="radio" name="gender" value="female" id="female">Female
+                <input type="radio" name="gender" value="other" id="other">Others
             </div>
             <div class="form-group">
                 <label for="date">Date of Birth</label>
@@ -42,7 +43,7 @@
             </div>
             <div class="form-group">
                 <label for="address">Address</label>
-                <input type="text" placeholder="your current address">
+                <input type="text" id="address" name="address" placeholder="your current address">
             </div>
             <div class="form-group">
                 <label for="blood-group">Blood Group</label>
@@ -59,19 +60,18 @@
             </div>
             <div class="form-group">
                 <label for="department">Department</label>
-                <input type="radio" name="cse" id="cse">CSE
-                <input type="radio" name="ece" id="ece">ECE
-                <input type="radio" name="it" id="it">IT
+                <input type="radio" name="department" value="cse" id="cse">CSE
+                <input type="radio" name="department" value="ece" id="ece">ECE
+                <input type="radio" name="department" value="it" id="it">IT
             </div>
             <div class="form-group">
-                <label for="skills">Skills(Any 4)</label>
-                <input type="checkbox" name="python" id="python">Python
-                <input type="checkbox" name="java" id="java">Java
-                <input type="checkbox" name="c" id="c">C++
-                <input type="checkbox" name="php" id="php">PHP
-                <input type="checkbox" name="dev" id="dev">Web Dev
+                <label for="skills">Skills (Any 4)</label>
+                <input type="checkbox" name="skills" value="python" id="python">Python
+                <input type="checkbox" name="skills" value="java" id="java">Java
+                <input type="checkbox" name="skills" value="c" id="c">C++
+                <input type="checkbox" name="skills" value="php" id="php">PHP
+                <input type="checkbox" name="skills" value="dev" id="dev">Web Dev
             </div>
-            
             <div class="form-group">
                 <label for="password">Password</label>
                 <input type="password" id="password" name="password" required>
